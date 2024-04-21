@@ -1,0 +1,19 @@
+TestWindow < MainWindow
+  id: testwindow
+  !text: tr('Test')
+  size: 500 400
+  @onEscape: self:destroy()
+
+  TextList
+    id: background
+    anchors.top: parent.top
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-bottom: 20
+
+  Button
+    id: jumpButton
+    !text: tr('Jump!')
+    width: 90
+    @onClick: modules.game_testQ7.resetButton()

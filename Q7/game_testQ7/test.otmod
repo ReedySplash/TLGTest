@@ -1,0 +1,9 @@
+Module
+  name: game_testQ7
+  description: Q7Test
+  author: Victor
+  website: Test
+  sandboxed: true
+  scripts: [ test ]
+  @onLoad: init()
+  @onUnload: terminate()
